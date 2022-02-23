@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProyectoFinalEvaluación_PaulaPlazaGuirado</string>
+    <string name="login">Registrarse</string>
+    <string name="error">Error</string>
+    <string name="errorMenssage">Ha ocurrido un error</string>
+    <string name="errorButton">ACEPTAR</string>
+</resources>
