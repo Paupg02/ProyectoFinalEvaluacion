@@ -4,6 +4,9 @@
     <string name="error">Error</string>
     <string name="errorMenssage">An error has occurred</string>
     <string name="errorButton">AGREE</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="localization">About us and our delivery area</string>
+    <string name="permissionsL">Go to settings and enable location permissions</string>
+    <string name="permissionsL2">Permissions necessary for the app, activate them</string>
+    <string name="permissionsL3">Give me the permits</string>
+    <string name="marcadorL">Us</string>
 </resources>

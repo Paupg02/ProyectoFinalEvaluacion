@@ -4,4 +4,9 @@
     <string name="error">Error</string>
     <string name="errorMenssage">Ha ocurrido un error</string>
     <string name="errorButton">ACEPTAR</string>
+    <string name="localization">Nosotros y nuestra area de reparto</string>
+    <string name="permissionsL">Vaya a ajustes y active los permisos de localización</string>
+    <string name="permissionsL2">Permisos necesarios para la app, activalos</string>
+    <string name="permissionsL3">Dame los permisos</string>
+    <string name="marcadorL">Nosotros</string>
 </resources>
