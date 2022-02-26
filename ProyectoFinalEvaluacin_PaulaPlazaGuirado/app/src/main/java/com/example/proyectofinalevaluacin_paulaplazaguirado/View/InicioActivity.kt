@@ -29,9 +29,24 @@ class InicioActivity : AppCompatActivity() , OnFragmentActionListener{
 
     override fun onClickMenu(btn: Int) {
         when(btn){
-            0-> startActivity(Intent(this, MapaActivity::class.java))
-            1-> startActivity(Intent(this, CompraActivity::class.java))
-            2-> startActivity(Intent(this, PaquetesActivity::class.java))
+            0-> {
+                val i =Intent(this, MapaActivity::class.java).apply {
+                    putExtra("EMAIL", email)
+                }
+                startActivity(i)
+            }
+            1-> {
+                val i =Intent(this, CompraActivity::class.java).apply {
+                    putExtra("EMAIL", email)
+                }
+                startActivity(i)
+            }
+            2-> {
+                val i =Intent(this, PaquetesActivity::class.java).apply {
+                    putExtra("EMAIL", email)
+                }
+                startActivity(i)
+            }
             3->{
                 prefs.borrarTodo()
                 FirebaseAuth.getInstance().signOut()

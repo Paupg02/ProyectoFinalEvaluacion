@@ -9,4 +9,5 @@
     <string name="permissionsL2">Permisos necesarios para la app, activalos</string>
     <string name="permissionsL3">Dame los permisos</string>
     <string name="marcadorL">Nosotros</string>
+    <string name="fragmentThere">Ya estás ahí</string>
 </resources>
