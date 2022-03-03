@@ -10,4 +10,5 @@
     <string name="permissionsL3">Dame los permisos</string>
     <string name="marcadorL">Nosotros</string>
     <string name="fragmentThere">Ya estás ahí</string>
+    <string name="IllegalArgumentException">Clase de modelo de vista desconocida</string>
 </resources>

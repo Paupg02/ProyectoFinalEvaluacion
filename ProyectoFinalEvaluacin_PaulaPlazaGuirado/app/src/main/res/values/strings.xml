@@ -10,4 +10,5 @@
     <string name="permissionsL3">Give me the permits</string>
     <string name="marcadorL">Us</string>
     <string name="fragmentThere">You\'re already there</string>
+    <string name="IllegalArgumentException">Unknown View Model class</string>
 </resources>
