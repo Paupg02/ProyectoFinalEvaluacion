@@ -11,18 +11,26 @@ import com.example.proyectofinalevaluacin_paulaplazaguirado.R
 import com.example.proyectofinalevaluacin_paulaplazaguirado.databinding.RecylerRopaBinding
 import kotlinx.coroutines.launch
 
-class RecyclerAdapter(private val clickListener: (ProductosDataClass) -> Unit) :
-    RecyclerView.Adapter<ViewHolder>() {
+class RecyclerAdapter(private val clickListener: (ProductosDataClass) -> Unit) : RecyclerView.Adapter<ViewHolder>() {
+    private val productosList =ArrayList<ProductosDataClass>()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        TODO("Not yet implemented")
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val binding= DataBindingUtil.inflate<ViewDataBinding>(layoutInflater,R.layout.recyler_ropa, parent, false)
+        return ViewHolder(binding as RecylerRopaBinding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.render(productosList[position], clickListener)
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return productosList.size
+    }
+
+    fun setList(productosDataClasses: List<ProductosDataClass>) {
+        productosList.clear()
+        productosList.addAll(productosDataClasses)
     }
 
 }
