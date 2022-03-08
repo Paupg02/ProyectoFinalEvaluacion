@@ -11,4 +11,17 @@
     <string name="marcadorL">Us</string>
     <string name="fragmentThere">You\'re already there</string>
     <string name="IllegalArgumentException">Unknown View Model class</string>
+    <string name="Shoes">Shoes</string>
+    <string name="ShoesDescription">A pair of platform shoes </string>
+    <string name="Jeans">Jeans</string>
+    <string name="JeansDescription">Ripped jeans </string>
+    <string name="Tshirt">T-shirt</string>
+    <string name="TshirtDescription">A torn shirt with a gesture </string>
+    <string name="Sweatshirt">Sweatshirt</string>
+    <string name="SweatshirtDescription">A basic sweatshirt </string>
+    <string name="Dress">Dress</string>
+    <string name="DressDescription">A black and red checkered dress </string>
+    <string name="Finish">End up</string>
+    <string name="FinishToast">You have to add at least one product to complete the purchase</string>
+    <string name="Add">Added</string>
 </resources>

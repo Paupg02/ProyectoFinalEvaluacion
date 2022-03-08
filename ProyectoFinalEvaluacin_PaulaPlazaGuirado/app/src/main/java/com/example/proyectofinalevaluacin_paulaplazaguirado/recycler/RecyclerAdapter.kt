@@ -3,21 +3,17 @@ package com.example.proyectofinalevaluacin_paulaplazaguirado.recycler
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectofinalevaluacin_paulaplazaguirado.Model.ProductosDataClass
-import com.example.proyectofinalevaluacin_paulaplazaguirado.R
 import com.example.proyectofinalevaluacin_paulaplazaguirado.databinding.RecylerRopaBinding
-import kotlinx.coroutines.launch
 
 class RecyclerAdapter(private val clickListener: (ProductosDataClass) -> Unit) : RecyclerView.Adapter<ViewHolder>() {
     private val productosList =ArrayList<ProductosDataClass>()
-
+    lateinit var context : Context
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val layoutInflater = LayoutInflater.from(parent.context)
-        val binding= DataBindingUtil.inflate<ViewDataBinding>(layoutInflater,R.layout.recyler_ropa, parent, false)
-        return ViewHolder(binding as RecylerRopaBinding)
+        val binding : RecylerRopaBinding = RecylerRopaBinding.inflate(LayoutInflater.from(parent.context))
+        context = parent.context
+        return ViewHolder(binding , context)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -33,4 +29,7 @@ class RecyclerAdapter(private val clickListener: (ProductosDataClass) -> Unit) :
         productosList.addAll(productosDataClasses)
     }
 
+    interface ClickListener {
+        fun onItemClick(productos: ProductosDataClass)
+    }
 }

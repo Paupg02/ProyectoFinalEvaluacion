@@ -11,4 +11,17 @@
     <string name="marcadorL">Nosotros</string>
     <string name="fragmentThere">Ya estás ahí</string>
     <string name="IllegalArgumentException">Clase de modelo de vista desconocida</string>
+    <string name="Shoes">Zapatos</string>
+    <string name="ShoesDescription">Un par de zapatos con plataformas</string>
+    <string name="Jeans">Pantalón</string>
+    <string name="JeansDescription">Un pantalón vaquero roto</string>
+    <string name="Tshirt">Camiseta</string>
+    <string name="TshirtDescription">Una camiseta rota con un gesto</string>
+    <string name="Sweatshirt">Sudadera</string>
+    <string name="SweatshirtDescription">Una sudadera basica</string>
+    <string name="Dress">Vestido</string>
+    <string name="DressDescription">Un vestido a cuadros negros y rojos</string>
+    <string name="Finish">Terminar</string>
+    <string name="FinishToast">Tienes que añadir al menos un producto para terminar la compra</string>
+    <string name="Add">Añadido</string>
 </resources>
