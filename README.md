@@ -7,8 +7,8 @@ Idea:
 4. [Pantalla inicial con imagen de la tienda y fragment con imágenes para cambiar de activity.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#pantalla-inicial)
 5. [Localización con Google maps, con marcador y área en color para área de reparto.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#google-maps)
 6. [Recycler con los productos.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#productos)
-7. Hacer un pedido eligiendo productos.
-8. Subirlo a firebase.
+7. [Hacer un pedido eligiendo productos.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#pedido)
+8. [Subirlo a firebase.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#subir-a-firebase)
 9. Activity con los pedidos echos pulsar para confirmar entrega.
 10. Para confirmar se abrirá la camara para echar foto al producto. 
 
@@ -99,5 +99,15 @@ Productos
 1. Creo toda la estructura para una base de datos `SQLite` con `ROOM` empezando por la `DataClass`, el `DAO`, y la `DataBase`, despues el `Repository`, el `ViewModel` y el `ViewModelFactory` y por ultimo un `Event` para mostrar mensajes.
 2. Creo un layout  con un `CardView` para la vista de cada objeto del recycler.
 3. Creo la clase `RecyclerAdapter` y `ViewHolder` para mostrar los registros del recycler.
+4. Modifico la clase `ComprasActivity` para que guarde los datos de sesion, añada los productos que exixten a la base de datos y los muestre en un recycler.
+
+***
+Pedido
+-
+Lo que hago para hacer un pedido es ponerle un click listener a cada elemento del recycler, al hacer click en el elemento este se guarda en una lista local del `Activity` y esta lista será nuestro pedido.
+***
+Subir a Firebase
+-
+Para subir el pedido a Firebase lo que hago es comprobar que la lista de compra no esté vacia, cuando esto ocurre esta se sube a Firebase con un `System.currentTimeMillis()` para que no haya posibilidad de que algun registro se sobreescriba.
 
 ***
