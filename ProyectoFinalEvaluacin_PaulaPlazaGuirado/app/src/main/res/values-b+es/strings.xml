@@ -24,4 +24,5 @@
     <string name="Finish">Terminar</string>
     <string name="FinishToast">Tienes que añadir al menos un producto para terminar la compra</string>
     <string name="Add">Añadido</string>
+    <string name="firebaseOk">Pedido completado</string>
 </resources>

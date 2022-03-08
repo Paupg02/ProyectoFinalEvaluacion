@@ -57,10 +57,10 @@ class CompraActivity : AppCompatActivity() , OnFragmentActionListener,
         val time = System.currentTimeMillis()
         reference.child(time.toString()).setValue(compra)
             .addOnSuccessListener {
-            Toast.makeText(this, "Pedido completado", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.firebaseOk), Toast.LENGTH_LONG).show()
             }
             .addOnFailureListener{
-                Toast.makeText(this, "Ha ocurrido un error "+it.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(this, getString(R.string.errorMenssage)+it.message, Toast.LENGTH_LONG).show()
             }
         compra.clear()
     }
@@ -111,7 +111,7 @@ class CompraActivity : AppCompatActivity() , OnFragmentActionListener,
     }
 
     override fun onItemClick(productos: ProductosDataClass) {
-        Toast.makeText(this, getString(R.string.Add)+productos.nombre, Toast.LENGTH_LONG).show()
+        Toast.makeText(this, getString(R.string.Add)+" "+productos.nombre, Toast.LENGTH_SHORT).show()
         compra.add(compra.size,ProductosDataClass(productos.id, productos.nombre, productos.descripcion, productos.imagen))
     }
 
