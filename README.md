@@ -6,12 +6,11 @@ Idea:
 3. [Registro con Google.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#registro-con-google)
 4. [Pantalla inicial con imagen de la tienda y fragment con imágenes para cambiar de activity.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#pantalla-inicial)
 5. [Localización con Google maps, con marcador y área en color para área de reparto.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#google-maps)
-6. [Activity con barra de búsqueda, recycler con los productos.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#productos)
-7. Fragment para elegir los detalles del producto seleccionado y poder añadirlo al pedido.
-8. En los detalles del producto se verá un pequeño video del mismo.
-9. Al terminar el pedido pasaremos a otro activity en el que aparecerán los productos elegidos y podremos modificarlos o borrarlos. 
-10. Guardamos en firebase el pedido.
-11. Consultamos los que están sin recibir y para confirmarlos habrá que echar una foto. 
+6. [Recycler con los productos.](https://github.com/Paupg02/ProyectoFinalEvaluacion/edit/main/README.md#productos)
+7. Hacer un pedido eligiendo productos.
+8. Subirlo a firebase.
+9. Activity con los pedidos echos pulsar para confirmar entrega.
+10. Para confirmar se abrirá la camara para echar foto al producto. 
 
 ***
 Creo un proyecto en `Android Studio` para poder empezar.
